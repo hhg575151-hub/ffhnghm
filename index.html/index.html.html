@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>عيد الحب 💞</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Cairo',sans-serif;
+background:linear-gradient(135deg,#ff4d88,#ff99cc,#ffcce6);
+background-size:400% 400%;
+animation:bgMove 10s infinite alternate;
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+@keyframes bgMove{
+0%{background-position:left;}
+100%{background-position:right;}
+}
+
+.login{
+margin-top:120px;
+animation:fadeIn 2s;
+}
+
+.container{
+display:none;
+max-width:900px;
+margin:20px auto;
+padding:25px;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(12px);
+border-radius:25px;
+line-height:2;
+font-size:22px;
+box-shadow:0 0 40px rgba(255,0,100,.5);
+animation:fadeIn 2s;
+}
+
+.title{
+font-size:34px;
+text-shadow:0 0 15px pink;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+50%{transform:scale(1.05);}
+}
+
+input,button{
+padding:12px;
+font-size:18px;
+border:none;
+border-radius:10px;
+}
+
+button{
+background:#ff2e63;
+color:white;
+cursor:pointer;
+}
+
+.counter{
+margin:15px;
+font-size:22px;
+text-shadow:0 0 10px #fff;
+}
+
+.heart{
+position:fixed;
+color:#ff004c;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+from{transform:translateY(100vh);}
+to{transform:translateY(-10vh);}
+}
+
+.star{
+position:fixed;
+color:white;
+font-size:12px;
+animation:twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle{
+from{opacity:.2;}
+to{opacity:1;}
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="login">
+<h2>🔒 كلمة السر</h2>
+<input type="password" id="pass">
+<br><br>
+<button onclick="checkPass()">دخول</button>
+</div>
+
+<div class="container" id="content">
+
+<div class="title">
+💗🫦♥️🫂Happy Valentine Day
+كل يوم وانتى عيدي هو انا مش مستني
+عيد الحب يجي علشان اكتبلك كلام حلو في يوم زي دا انتي من يوم ما دخلتى حياتي وانا حياتي صارت اجمل حاجه  وعاوز اقولك مش محتاج اكتب مسج لعيد الحب لاني مش اليوم ده الا هحبك فيه بسانا السنه كلها بالنسبا لي عيد حب وانتى معايا حبيبت قلبي علشان انتى فيه مش بوست لحبيبتي هو اللي هيبين غلاوتك عندي انت كل حاجه ليا يا حبيبتي وقره عينى انتى اجمل واحلى وأغلى حاجه ربنا رزقني بيها من يوم ما دخلتى حياتي كلها انت الحاجه اللي ما ينفعش تتعوض ولا في منها اثنين اللي زيك ما يتقرنش بحد أصلا لأن اللي زيك قليل طبعا انتي عارفه غلاوتك عندي قد ايه لو قعدت اتكلم عنك مش هيكفي في حقك اي كلام يتقال يكفيني انك عارفه انتى بالنسبالي ايه انتي اجمل واحلى بنوته حصلت في الدنيا كلها يا ايوش انتي الي حياتي مفهاش حلو غيريك اصلا انا ما حدش بيفرحني غيرك انتي الروح اللي ساكنه في قلبي وعقلي اخر حاجه عاوز اقولهلك أنك أحلى صدفه في عمري كل عام وانتي حبيبتي وقلبي كل عيد حب وانتى سعادتي وضحكتي كل عيد حب وانتي مبسوطه وديما أكون السبب في سعادتك كل عيد حب وانتى منوره حياتي وعمري وتفضلي نور عيني وحبيبت عمري ويفرحنا يارب عن قريب بجوازنا هابي فلانتين يا روح قلبي يديمك في حياتي طول العمر كل سنة وانتى معايا ينور عيني بحبك ايوشي  🫂🫂🫂♥️
+</div>
+
+<div class="counter" id="days"></div>
+
+<!-- 🎵 أغنية يوتيوب (مخفية) -->
+<button onclick="playMusic()">▶️ تشغيل الموسيقى</button>
+
+<iframe id="ytmusic" width="0" height="0"
+src="https://www.youtube.com/embed/QoVd8rOnzyw?loop=1&playlist=QoVd8rOnzyw"
+frameborder="0"
+allow="autoplay">
+</iframe>
+
+<script>
+function playMusic(){
+  let iframe = document.getElementById("ytmusic");
+  // تحديث src لإعادة تشغيل الفيديو
+  iframe.src = "https://www.youtube.com/embed/QoVd8rOnzyw?autoplay=1&loop=1&playlist=QoVd8rOnzyw";
+}
+</script>
+
+💗🫦♥️🫂 Happy Valentine Day  
+
+كل يوم وانتى عيدي…  
+انتي من يوم ما دخلتى حياتي وحياتي بقت أجمل ❤️  
+
+14/02  
+معك سأبد عيد الحب 💝  
+ومعك اختم كل ايامي 💑  
+كل عيد وانتي نبضي 🫀  
+كل عيد وانتي قلبي 💜❤  
+احبك من أول لحضه وأول نضره 😘  
+من هذاك ليوم واحبك احبك 💋  
+في آخر ثانيه منه 💕
+
+</div>
+
+<script>
+
+// 🔒 باسورد
+function checkPass(){
+let password="I LOVE YOU";
+let input=document.getElementById("pass").value;
+
+if(input===password){
+document.querySelector(".login").style.display="none";
+document.getElementById("content").style.display="block";
+}else{
+alert("الباسورد غلط!");
+}
+}
+
+// 📅 عداد الأيام
+let start=new Date("Oct 06, 2025");
+function updateDays(){
+let now=new Date();
+let diff=Math.floor((now-start)/(1000*60*60*24));
+document.getElementById("days").innerHTML=
+"💞 عدد الأيام منذ عيد الحب: "+Math.abs(diff);
+}
+setInterval(updateDays,1000);
+
+// ❤️ قلوب
+function heart(){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤";
+h.style.left=Math.random()*100+"vw";
+h.style.fontSize=(20+Math.random()*30)+"px";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),6000);
+}
+setInterval(heart,400);
+
+// ✨ نجوم
+function star(){
+let s=document.createElement("div");
+s.className="star";
+s.innerHTML="✦";
+s.style.left=Math.random()*100+"vw";
+s.style.top=Math.random()*100+"vh";
+document.body.appendChild(s);
+setTimeout(()=>s.remove(),2000);
+}
+setInterval(star,200);
+
+</script>
+
+</body>
+</html>
